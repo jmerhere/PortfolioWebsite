@@ -12,7 +12,7 @@ body {
   background: url('banff.jpg') no-repeat center center fixed;
   background-size: cover;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Blur Effect */
@@ -34,7 +34,6 @@ body::before {
   z-index: 1;
   padding: 2rem;
 }
-
 
 /* Header */
 header {
@@ -90,7 +89,6 @@ header nav ul li a:hover::after {
   width: 100%; /* Expands underline from left to right */
 }
 
-
 /* About Section */
 #about {
   padding: 4rem 2rem;
@@ -125,7 +123,6 @@ header nav ul li a:hover::after {
   max-width: 600px;
   margin: 0 auto;
 }
-
 
 /* Projects Section */
 #projects {
@@ -179,12 +176,12 @@ header nav ul li a:hover::after {
 
 /* Contact Styles */
 #contact {
-  padding: 2rem;
+  padding: 4rem 2rem; /* Increased padding for better spacing */
   background-color: #fafafa;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   max-width: 600px;
-  margin: 0 auto;
+  margin: 2rem auto; /* Centered with margin */
 }
 
 #contact h2 {
@@ -224,10 +221,9 @@ header nav ul li a:hover::after {
   background-color: #45a049; /* Darker green on hover */
 }
 
-
 /* Footer Styles */
 footer {
-  position: fixed;
+  position: fixed; /* Keeps the footer at the bottom */
   bottom: 0;
   left: 0;
   width: 100%;
