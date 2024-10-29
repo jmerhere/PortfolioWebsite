@@ -68,20 +68,37 @@ header nav ul li a:hover {
 #about {
   padding: 4rem 2rem;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #about h1 {
   font-size: 2.5rem;
-  color: #333;
+  color: #222; /* Darker color for better readability */
   margin-bottom: 1rem;
+  font-weight: bold;
+  font-family: 'Arial Black', Arial, sans-serif; /* Makes the title bolder */
 }
 
 #about p {
   font-size: 1.2rem;
-  color: #666;
+  color: #444;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Card Style for About Section */
+.about-card {
+  background-color: rgba(255, 255, 255, 0.85); /* Light background with slight opacity */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
   max-width: 600px;
   margin: 0 auto;
 }
+
 
 /* Projects Section */
 #projects {
