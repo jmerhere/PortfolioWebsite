@@ -92,10 +92,15 @@ header nav ul li a:hover::after {
 /* About Section */
 #about {
   padding: 4rem 2rem;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex; /* Use flexbox to align items */
+  justify-content: center; /* Center the items */
+  align-items: center; /* Vertically center the items */
+  text-align: left; /* Align text to the left */
+}
+
+#about .about-content {
+  max-width: 600px; /* Limits the width of the text content */
+  margin-right: 2rem; /* Space between text and image */
 }
 
 #about h1 {
@@ -109,9 +114,17 @@ header nav ul li a:hover::after {
 #about p {
   font-size: 1.2rem;
   color: #444;
-  max-width: 600px;
-  margin: 0 auto;
   line-height: 1.6;
+}
+
+/* Image Style */
+#about .about-image {
+  max-width: 40%; /* Limits the width of the image */
+}
+
+#about .about-image img {
+  width: 100%; /* Makes the image responsive */
+  border-radius: 8px; /* Optional: adds rounded corners */
 }
 
 /* Card Style for About Section */
@@ -123,6 +136,7 @@ header nav ul li a:hover::after {
   max-width: 600px;
   margin: 0 auto;
 }
+
 
 /* Projects Section */
 #projects {
