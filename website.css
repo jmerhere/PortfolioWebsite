@@ -8,9 +8,33 @@
 body {
   font-family: Arial, sans-serif;
   color: #333;
-  background-color: #f4f4f9;
   line-height: 1.6;
+  background: url('banff.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
 }
+
+/* Blur Effect */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  filter: blur(8px);
+  z-index: -1; /* Ensures it stays behind all other content */
+}
+
+/* Content Wrapper to Add Padding */
+#content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+}
+
 
 /* Header Styles */
 header {
