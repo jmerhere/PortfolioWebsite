@@ -263,3 +263,29 @@ footer a {
 footer a:hover {
   color: #fff;
 }
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  #about {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center text on small screens */
+  }
+
+  #about .about-content {
+    margin-right: 0; /* Remove right margin */
+    max-width: 100%; /* Allow text to use full width */
+  }
+
+  #about .about-image {
+    max-width: 100%; /* Ensure the image is responsive */
+    margin-top: 1rem; /* Add some space above the image */
+  }
+
+  #about h1 {
+    font-size: 2rem; /* Adjust heading size for smaller screens */
+  }
+
+  #about p {
+    font-size: 1rem; /* Adjust paragraph size for smaller screens */
+  }
+}
