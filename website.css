@@ -36,20 +36,28 @@ body::before {
 }
 
 
-/* Header Styles */
+/* Header */
 header {
   background-color: #333;
   padding: 1rem 0;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Keeps it on top */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 }
 
+/* Navigation Links */
 header nav ul {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
 }
 
 header nav ul li {
-  display: inline;
-  margin: 0 15px;
+  position: relative;
 }
 
 header nav ul li a {
@@ -57,12 +65,31 @@ header nav ul li a {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1rem;
+  position: relative;
   transition: color 0.3s ease;
+  padding-bottom: 5px; /* Adds space for the underline */
+}
+
+/* Hover Animation for Links */
+header nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #4CAF50;
+  transition: width 0.3s ease;
 }
 
 header nav ul li a:hover {
-  color: #4CAF50; /* Highlight color */
+  color: #4CAF50; /* Changes text color on hover */
 }
+
+header nav ul li a:hover::after {
+  width: 100%; /* Expands underline from left to right */
+}
+
 
 /* About Section */
 #about {
