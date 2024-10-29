@@ -289,3 +289,8 @@ footer a:hover {
     font-size: 1rem; /* Adjust paragraph size for smaller screens */
   }
 }
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}
