@@ -199,34 +199,35 @@ header nav ul li a:hover::after {
   transform: translateY(-50%);
   opacity: 0; /* Start hidden */
   transition: opacity 0.5s ease, transform 0.5s ease;
-  width: 25px; /* Adjust this width as needed */
-  height: auto; /* Maintain aspect ratio */
+  width: 50px; /* Adjust this width as needed */
+  height: 50px; /* Added height for uniformity */
 }
 
 .image-left {
-  left: -100px; /* Start off-screen to the left */
+  left: -80px; /* Start off-screen to the left */
 }
 
 .image-right {
-  right: -100px; /* Start off-screen to the right */
+  right: -80px; /* Start off-screen to the right */
 }
 
 /* Show the images when in view */
 .image-left.show {
   opacity: 1; /* Fully visible */
-  transform: translate(100px, -50%); /* Move into view */
+  transform: translate(50px, -50%); /* Move into view */
 }
 
 .image-right.show {
   opacity: 1; /* Fully visible */
-  transform: translate(-100px, -50%); /* Move into view */
+  transform: translate(-50px, -50%); /* Move into view */
 }
 
 /* Media Query for Responsiveness */
 @media (max-width: 768px) {
   .image-left,
   .image-right {
-    width: 100px; /* Smaller width for mobile devices */
+    width: 40px; /* Smaller width for mobile devices */
+    height: 40px; /* Keep aspect ratio */
   }
 }
 
