@@ -212,12 +212,12 @@ header nav ul li a:hover::after {
 /* Show the images when in view */
 .image-left.show {
   opacity: 1; /* Fully visible */
-  transform: translate(100px, -50%); /* Move into view */
+  transform: translate(150px, -50%); /* Move into view */
 }
 
 .image-right.show {
   opacity: 1; /* Fully visible */
-  transform: translate(-100px, -50%); /* Move into view */
+  transform: translate(-200px, -50%); /* Move into view */
 }
 
 /* Media Query for Responsiveness */
