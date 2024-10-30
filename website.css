@@ -154,7 +154,7 @@ header nav ul li a:hover::after {
 
 .project-card {
   background-color: white;
-  max-width: 150px;
+  max-width: 400px;
   margin: 1rem auto;
   padding: 1.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -197,7 +197,7 @@ header nav ul li a:hover::after {
   transform: translateY(-50%); /* Adjust for centering */
   opacity: 0; /* Start hidden */
   transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
-  width: 50px; /* Adjust the width as needed */
+  width: 25px; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
 }
 
