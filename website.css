@@ -199,7 +199,7 @@ header nav ul li a:hover::after {
   transform: translateY(-50%);
   opacity: 0; /* Start hidden */
   transition: opacity 0.5s ease, transform 0.5s ease;
-  width: 150px; /* Adjust this width as needed */
+  width: 25px; /* Adjust this width as needed */
   height: auto; /* Maintain aspect ratio */
 }
 
