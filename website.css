@@ -200,15 +200,17 @@ header nav ul li a:hover::after {
   opacity: 0; /* Start hidden */
   transition: opacity 0.5s ease, transform 0.5s ease;
   width: 50px; /* Adjust this width as needed */
-  height: 50px; /* Added height for uniformity */
+  height: auto; /* Added height for uniformity */
+  max-width: 100px;
+  max-height: 100px;
 }
 
 .image-left {
-  left: -80px; /* Start off-screen to the left */
+  left: -100px; /* Start off-screen to the left */
 }
 
 .image-right {
-  right: -80px; /* Start off-screen to the right */
+  right: -100px; /* Start off-screen to the right */
 }
 
 /* Show the images when in view */
@@ -227,7 +229,6 @@ header nav ul li a:hover::after {
   .image-left,
   .image-right {
     width: 40px; /* Smaller width for mobile devices */
-    height: 40px; /* Keep aspect ratio */
   }
 }
 
