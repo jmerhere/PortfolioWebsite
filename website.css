@@ -197,6 +197,8 @@ header nav ul li a:hover::after {
   transform: translateY(-50%); /* Adjust for centering */
   opacity: 0; /* Start hidden */
   transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+  width: 150px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .image-left {
@@ -217,6 +219,15 @@ header nav ul li a:hover::after {
   opacity: 1; /* Fully visible */
   transform: translate(-100px, -50%); /* Move into view */
 }
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .image-left,
+  .image-right {
+    width: 100px; /* Smaller width for mobile devices */
+  }
+}
+
 
 
 /* Contact Styles */
