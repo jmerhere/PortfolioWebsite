@@ -33,7 +33,7 @@
     <div class="project-card">
       <h3>Project Name</h3>
       <p>Description of the project.</p>
-      <a href="https://github.com/yourusername/project">View Code</a>
+      <a href="https://github.com/jmerhere/PortfolioWebsite">View Code</a>
     </div>
   </section>
 
@@ -56,7 +56,37 @@
       <div>
         <button type="submit">Send Message</button>
       </div>
+      <p id="confirmation-message" style="display:none; color:green; margin-top:10px;">Message sent!</p>
     </form>
+
+    <script>
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+    
+        const form = event.target;
+    
+        // Send form data
+        fetch(form.action, {
+          method: form.method,
+          headers: {
+            'Accept': 'application/json'
+          },
+          body: new FormData(form)
+        }).then(response => {
+          if (response.ok) {
+            // Show confirmation message
+            document.getElementById('confirmation-message').style.display = 'block';
+            
+            // Clear form fields
+            form.reset();
+          } else {
+            alert('Oops! There was a problem sending your message.');
+          }
+        }).catch(error => {
+          alert('Error: ' + error.message);
+        });
+      });
+    </script>
   </section>
   
   <footer>
