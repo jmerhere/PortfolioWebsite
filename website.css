@@ -143,7 +143,7 @@ header nav ul li a:hover::after {
   padding: 4rem 2rem;
   background-color: #fafafa;
   text-align: center;
-  position: relative; /* Ensures the images are positioned relative to this section */
+  position: relative; /* Ensures images are positioned relative to this section */
 }
 
 #projects h2 {
@@ -152,9 +152,11 @@ header nav ul li a:hover::after {
   margin-bottom: 2rem;
 }
 
+/* Adjusted Project Card */
 .project-card {
   background-color: white;
-  max-width: 400px;
+  max-width: 600px; /* Increased max-width for a wider card */
+  width: 90%; /* Ensures the card is responsive */
   margin: 1rem auto;
   padding: 1.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -192,12 +194,12 @@ header nav ul li a:hover::after {
 /* Image Styles */
 .image-left,
 .image-right {
-  position: absolute; /* Position them absolutely within the section */
-  top: 50%; /* Align them to the center vertically */
-  transform: translateY(-50%); /* Adjust for centering */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   opacity: 0; /* Start hidden */
-  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
-  width: 25px; /* Adjust the width as needed */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  width: 150px; /* Adjust this width as needed */
   height: auto; /* Maintain aspect ratio */
 }
 
@@ -227,7 +229,6 @@ header nav ul li a:hover::after {
     width: 100px; /* Smaller width for mobile devices */
   }
 }
-
 
 
 /* Contact Styles */
