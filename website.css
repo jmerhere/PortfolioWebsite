@@ -143,6 +143,7 @@ header nav ul li a:hover::after {
   padding: 4rem 2rem;
   background-color: #fafafa;
   text-align: center;
+  position: relative; /* Ensures the images are positioned relative to this section */
 }
 
 #projects h2 {
@@ -187,6 +188,36 @@ header nav ul li a:hover::after {
 .project-card a:hover {
   color: #333;
 }
+
+/* Image Styles */
+.image-left,
+.image-right {
+  position: absolute; /* Position them absolutely within the section */
+  top: 50%; /* Align them to the center vertically */
+  transform: translateY(-50%); /* Adjust for centering */
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
+
+.image-left {
+  left: -100px; /* Start off-screen to the left */
+}
+
+.image-right {
+  right: -100px; /* Start off-screen to the right */
+}
+
+/* Show the images when in view */
+.image-left.show {
+  opacity: 1; /* Fully visible */
+  transform: translate(100px, -50%); /* Move into view */
+}
+
+.image-right.show {
+  opacity: 1; /* Fully visible */
+  transform: translate(-100px, -50%); /* Move into view */
+}
+
 
 /* Contact Styles */
 #contact {
