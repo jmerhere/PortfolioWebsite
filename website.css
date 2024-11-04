@@ -13,6 +13,7 @@ body {
   background-size: cover;
   position: relative;
   overflow-x: hidden; /* Prevent horizontal scrolling */
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Blur Effect */
@@ -37,12 +38,22 @@ body::before {
 
 /* Header */
 header {
-  background-color: #333;
-  padding: 1rem 0;
+  padding: 0.5rem 0; /* Reduced padding for a more compact header */
   text-align: center;
   position: sticky;
   top: 0;
-  z-index: 1000; /* Keeps it on top */
+  z-index: 1000;
+  box-shadow: none; /* Removes the shadow around the header */
+  background-color: transparent; /* Makes the header background transparent */
+}
+
+/* Navigation Bar */
+header nav {
+  background-color: rgba(51, 51, 51, 0.8); /* Changed to RGBA for transparency */
+  padding: 0.5rem 1rem; /* Adds padding inside the nav for breathing room */
+  max-width: 95%; /* Further restricts width to give more side space */
+  margin: 0 auto; /* Centers the nav bar */
+  border-radius: 12px; /* Rounds the corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 }
 
@@ -51,7 +62,7 @@ header nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem; /* Reduces gap slightly for more compact links */
   padding: 0;
 }
 
@@ -63,10 +74,11 @@ header nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1rem; /* Slightly smaller font size */
   position: relative;
   transition: color 0.3s ease;
-  padding-bottom: 5px; /* Adds space for the underline */
+  padding: 5px 10px; /* Adds padding around links */
+  border-radius: 8px; /* Rounds link corners for a button-like feel */
 }
 
 /* Hover Animation for Links */
@@ -88,6 +100,8 @@ header nav ul li a:hover {
 header nav ul li a:hover::after {
   width: 100%; /* Expands underline from left to right */
 }
+
+
 
 /* About Section */
 #about {
@@ -141,14 +155,14 @@ header nav ul li a:hover::after {
 /* Projects Section */
 #projects {
   padding: 4rem 2rem;
-  background-color: #fafafa;
+  background-color: #222;
   text-align: center;
   position: relative; /* Ensures the images are positioned relative to this section */
 }
 
 #projects h2 {
   font-size: 2rem;
-  color: #333;
+  color: #4CAF50;
   margin-bottom: 2rem;
 }
 
@@ -187,6 +201,13 @@ header nav ul li a:hover::after {
 
 .project-card a:hover {
   color: #333;
+}
+
+.coming-soon {
+  text-align: center; /* Center the text */
+  font-size: 1.2rem; /* Adjust font size */
+  color: #666; /* Change the color as needed */
+  margin-top: 1rem; /* Add some space above the text */
 }
 
 /* Image Styles */
