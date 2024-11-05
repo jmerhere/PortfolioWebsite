@@ -101,6 +101,22 @@ header nav ul li a:hover::after {
   width: 100%; /* Expands underline from left to right */
 }
 
+/* Default style for the underline */
+header nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #4CAF50;
+  transition: width 0.3s ease;
+}
+
+/* Style for active link */
+header nav ul li a.active::after {
+  width: 100%; /* Keeps the underline active */
+}
 
 
 /* About Section */
@@ -174,6 +190,8 @@ header nav ul li a:hover::after {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   transition: transform 0.3s ease;
+  position: relative; /* Ensures z-index takes effect */
+  z-index: 2; /* Places the card above the images */
 }
 
 .project-card:hover {
@@ -220,6 +238,7 @@ header nav ul li a:hover::after {
   transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
   width: 150px; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
+  z-index: 1; /* Places images behind the project card */
 }
 
 .image-left {
@@ -238,7 +257,7 @@ header nav ul li a:hover::after {
 
 .image-right.show {
   opacity: 1; /* Fully visible */
-  transform: translate(-200px, -50%); /* Move into view */
+  transform: translate(-400px, -50%); /* Move into view */
 }
 
 /* Media Query for Responsiveness */
@@ -248,6 +267,7 @@ header nav ul li a:hover::after {
     width: 100px; /* Smaller width for mobile devices */
   }
 }
+
 
 
 
