@@ -5,44 +5,14 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  color: #333;
-  line-height: 1.6;
-  background: url('banff.jpg') no-repeat center center fixed;
-  background-size: cover;
-  position: relative;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-  font-family: 'Roboto', sans-serif;
-}
-
-/* Blur Effect */
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: inherit;
-  filter: blur(8px);
-  z-index: -1; /* Ensures it stays behind all other content */
-}
-
-/* Content Wrapper to Add Padding */
-#content {
-  position: relative;
-  z-index: 1;
-  padding: 2rem;
-}
-
 /* Header */
 header {
   padding: 0.5rem 0; /* Reduced padding for a more compact header */
   text-align: center;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;
+  width: 100%;
   box-shadow: none; /* Removes the shadow around the header */
   background-color: transparent; /* Makes the header background transparent */
 }
@@ -117,6 +87,39 @@ header nav ul li a::after {
 header nav ul li a.active::after {
   width: 100%; /* Keeps the underline active */
 }
+
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background: url('banff.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Blur Effect */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  filter: blur(8px);
+  z-index: -1; /* Ensures it stays behind all other content */
+}
+
+/* Content Wrapper to Add Padding */
+#content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+}
+
 
 
 /* About Section */
@@ -376,12 +379,6 @@ footer a:hover {
 /* Smooth Scrolling */
 html {
   scroll-behavior: smooth; /* Enables smooth scrolling */
-}
-
-/* Ensure all sections are within the viewport width */
-section, header, footer {
-  max-width: 100%;
-  box-sizing: border-box;
 }
 
 /* Prevent horizontal scrolling */
