@@ -383,3 +383,9 @@ section, header, footer {
   max-width: 100%;
   box-sizing: border-box;
 }
+
+/* Prevent horizontal scrolling */
+body, html {
+  overflow-x: hidden;
+  width: 100%;
+}
