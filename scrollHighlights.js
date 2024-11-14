@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           navLinks.forEach((link) => {
-            link.classList.remove("active"); // Remove active class from all links
+            link.classList.remove("active"); 
             if (link.getAttribute("href").substring(1) === entry.target.id) {
-              link.classList.add("active"); // Add active class to the link for the section in view
+              link.classList.add("active"); 
             }
           });
         }

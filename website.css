@@ -7,24 +7,24 @@
 
 /* Header */
 header {
-  padding: 0.5rem 0; /* Reduced padding for a more compact header */
+  padding: 0.5rem 0; 
   text-align: center;
   position: fixed;
   top: 0;
   z-index: 1000;
   width: 100%;
-  box-shadow: none; /* Removes the shadow around the header */
-  background-color: transparent; /* Makes the header background transparent */
+  box-shadow: none; 
+  background-color: transparent; 
 }
 
 /* Navigation Bar */
 header nav {
-  background-color: rgba(51, 51, 51, 0.8); /* Changed to RGBA for transparency */
-  padding: 0.5rem 1rem; /* Adds padding inside the nav for breathing room */
-  max-width: 95%; /* Further restricts width to give more side space */
-  margin: 0 auto; /* Centers the nav bar */
-  border-radius: 12px; /* Rounds the corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  background-color: rgba(51, 51, 51, 0.8); 
+  padding: 0.5rem 1rem;
+  max-width: 95%; 
+  margin: 0 auto; 
+  border-radius: 12px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
 /* Navigation Links */
@@ -32,7 +32,7 @@ header nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 1.5rem; /* Reduces gap slightly for more compact links */
+  gap: 1.5rem; 
   padding: 0;
 }
 
@@ -44,11 +44,11 @@ header nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1rem; /* Slightly smaller font size */
+  font-size: 1rem; 
   position: relative;
   transition: color 0.3s ease;
-  padding: 5px 10px; /* Adds padding around links */
-  border-radius: 8px; /* Rounds link corners for a button-like feel */
+  padding: 5px 10px; 
+  border-radius: 8px; 
 }
 
 /* Hover Animation for Links */
@@ -64,11 +64,11 @@ header nav ul li a::after {
 }
 
 header nav ul li a:hover {
-  color: #4CAF50; /* Changes text color on hover */
+  color: #4CAF50; 
 }
 
 header nav ul li a:hover::after {
-  width: 100%; /* Expands underline from left to right */
+  width: 100%; 
 }
 
 /* Default style for the underline */
@@ -85,7 +85,7 @@ header nav ul li a::after {
 
 /* Style for active link */
 header nav ul li a.active::after {
-  width: 100%; /* Keeps the underline active */
+  width: 100%; 
 }
 
 
@@ -96,7 +96,7 @@ body {
   background: url('banff.jpg') no-repeat center center fixed;
   background-size: cover;
   position: relative;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden; 
   font-family: 'Roboto', sans-serif;
 }
 
@@ -110,7 +110,7 @@ body::before {
   bottom: 0;
   background: inherit;
   filter: blur(8px);
-  z-index: -1; /* Ensures it stays behind all other content */
+  z-index: -1; 
 }
 
 /* Content Wrapper to Add Padding */
@@ -125,23 +125,23 @@ body::before {
 /* About Section */
 #about {
   padding: 4rem 2rem;
-  display: flex; /* Use flexbox to align items */
-  justify-content: center; /* Center the items */
-  align-items: center; /* Vertically center the items */
-  text-align: left; /* Align text to the left */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: left; 
 }
 
 #about .about-content {
-  max-width: 600px; /* Limits the width of the text content */
-  margin-right: 2rem; /* Space between text and image */
+  max-width: 600px; 
+  margin-right: 2rem;
 }
 
 #about h1 {
   font-size: 2.5rem;
-  color: #222; /* Darker color for better readability */
+  color: #222; 
   margin-bottom: 1rem;
   font-weight: bold;
-  font-family: 'Arial Black', Arial, sans-serif; /* Makes the title bolder */
+  font-family: 'Arial Black', Arial, sans-serif; 
 }
 
 #about p {
@@ -152,20 +152,20 @@ body::before {
 
 /* Image Style */
 #about .about-image {
-  max-width: 40%; /* Limits the width of the image */
+  max-width: 40%; 
 }
 
 #about .about-image img {
-  width: 100%; /* Makes the image responsive */
-  border-radius: 8px; /* Optional: adds rounded corners */
+  width: 100%; 
+  border-radius: 8px; 
 }
 
 /* Card Style for About Section */
 .about-card {
-  background-color: rgba(255, 255, 255, 0.85); /* Light background with slight opacity */
+  background-color: rgba(255, 255, 255, 0.85);
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   max-width: 600px;
   margin: 0 auto;
 }
@@ -176,7 +176,7 @@ body::before {
   padding: 4rem 2rem;
   background-color: #222;
   text-align: center;
-  position: relative; /* Ensures the images are positioned relative to this section */
+  position: relative;
 }
 
 #projects h2 {
@@ -193,8 +193,8 @@ body::before {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   transition: transform 0.3s ease;
-  position: relative; /* Ensures z-index takes effect */
-  z-index: 2; /* Places the card above the images */
+  position: relative; 
+  z-index: 2; 
 }
 
 .project-card:hover {
@@ -225,49 +225,49 @@ body::before {
 }
 
 .coming-soon {
-  text-align: center; /* Center the text */
-  font-size: 1.2rem; /* Adjust font size */
-  color: #666; /* Change the color as needed */
-  margin-top: 1rem; /* Add some space above the text */
+  text-align: center; 
+  font-size: 1.2rem; 
+  color: #666; 
+  margin-top: 1rem; 
 }
 
 /* Image Styles */
 .image-left,
 .image-right {
-  position: absolute; /* Position them absolutely within the section */
-  top: 50%; /* Align them to the center vertically */
-  transform: translateY(-50%); /* Adjust for centering */
-  opacity: 0; /* Start hidden */
-  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
-  width: 150px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
-  z-index: 1; /* Places images behind the project card */
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease; 
+  width: 150px; 
+  height: auto; 
+  z-index: 1; 
 }
 
 .image-left {
-  left: -100px; /* Start off-screen to the left */
+  left: -100px; 
 }
 
 .image-right {
-  right: -100px; /* Start off-screen to the right */
+  right: -100px; 
 }
 
 /* Show the images when in view */
 .image-left.show {
-  opacity: 1; /* Fully visible */
-  transform: translate(150px, -50%); /* Move into view */
+  opacity: 1; 
+  transform: translate(150px, -50%); 
 }
 
 .image-right.show {
-  opacity: 1; /* Fully visible */
-  transform: translate(-400px, -50%); /* Move into view */
+  opacity: 1; 
+  transform: translate(-400px, -50%); 
 }
 
 /* Media Query for Responsiveness */
 @media (max-width: 768px) {
   .image-left,
   .image-right {
-    width: 100px; /* Smaller width for mobile devices */
+    width: 100px; 
   }
 }
 
@@ -276,12 +276,12 @@ body::before {
 
 /* Contact Styles */
 #contact {
-  padding: 4rem 2rem; /* Increased padding for better spacing */
+  padding: 4rem 2rem; 
   background-color: #fafafa;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   max-width: 600px;
-  margin: 2rem auto; /* Centered with margin */
+  margin: 2rem auto; 
 }
 
 #contact h2 {
@@ -318,12 +318,12 @@ body::before {
 }
 
 #contact button:hover {
-  background-color: #45a049; /* Darker green on hover */
+  background-color: #45a049; 
 }
 
 /* Footer Styles */
 footer {
-  position: fixed; /* Keeps the footer at the bottom */
+  position: fixed; 
   bottom: 0;
   left: 0;
   width: 100%;
@@ -331,7 +331,7 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem 0;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* Adds a slight shadow to separate footer */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); 
   font-size: 1rem;
   z-index: 10;
 }
@@ -353,32 +353,32 @@ footer a:hover {
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
   #about {
-    flex-direction: column; /* Stack items vertically */
-    text-align: center; /* Center text on small screens */
+    flex-direction: column; 
+    text-align: center; 
   }
 
   #about .about-content {
-    margin-right: 0; /* Remove right margin */
-    max-width: 100%; /* Allow text to use full width */
+    margin-right: 0; 
+    max-width: 100%; 
   }
 
   #about .about-image {
-    max-width: 100%; /* Ensure the image is responsive */
-    margin-top: 1rem; /* Add some space above the image */
+    max-width: 100%; 
+    margin-top: 1rem; 
   }
 
   #about h1 {
-    font-size: 2rem; /* Adjust heading size for smaller screens */
+    font-size: 2rem; 
   }
 
   #about p {
-    font-size: 1rem; /* Adjust paragraph size for smaller screens */
+    font-size: 1rem; 
   }
 }
 
 /* Smooth Scrolling */
 html {
-  scroll-behavior: smooth; /* Enables smooth scrolling */
+  scroll-behavior: smooth; 
 }
 
 /* Prevent horizontal scrolling */
